@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <form name="mainFrom" onsubmit="return false">
+      <fieldset id="custInfo">
+        <legend>Customer Information</legend>
+
+        <label for="custname"> Name:</label>
+        <input
+          name="custname"
+          id="custname"
+          placeholder="first and last name"
+          type="text"
+        />
+
+        <label for="city">City:</label>
+        <input name="city" id="city" placeholder="i.e. seattle" type="text" />
+
+        <label for="paymenttype">Payment type</label>
+        <select name="paymenttype" id="paymenttype" size="1">
+          <option value="Cash"> Cash</option>
+          <option value="Visa/MC" selected="selected"> Visa/MC</option>
+          <option value="Debit"> Debit </option>
+        </select>
+        <input type="submit" value="Submit" id="button" onclick="hello()" />
+      </fieldset>
+    </form>
+
+    <div id="MyCustomers">
+      <h3>
+        My Customers
+        <ul id="myList"></ul>
+      </h3>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

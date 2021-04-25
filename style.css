@@ -1,0 +1,44 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 2em;
+  color: #1a00db;
+  font-size: 30px;
+}
+
+h3 {
+  color: #373fff;
+  font-size: 20px;
+}
+
+fieldset {
+  background-image: linear-gradient(to right, #deecff, #2f84f7, #fbfc9a);
+  border: blue;
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
